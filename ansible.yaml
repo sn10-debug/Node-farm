@@ -1,0 +1,166 @@
+
+---
+
+# This is used to say that we are starting a document
+
+
+student:
+  name: "Shakti Santosh Nayak"
+  stream : "B-Tech in Computer Science"
+  skills :
+    - Javascript
+    - Python
+    - C++
+    - NodeJS
+    - Solidity
+    - Django
+  
+  birth_information:
+    city: "Berhampur"
+    DOB : 10-07-2003
+  
+...
+
+
+# This is to tell that we are ending a document
+
+---
+
+# lists
+
+- brinjal
+- ladyfinger
+- spinach
+- tomato
+- chili
+- ginger
+- spices
+
+
+
+...
+
+---
+
+# Writing a multiline text
+
+intro: |
+ Hey this is Shakti Santosh Nayak.
+ Whatsup ?
+ This will all be in multiline
+
+# Writing single line text in multiline
+
+single_line: >
+ Hey Whatsup ?
+ How do you do ?
+ This will all be in one single line
+
+# Integers
+
+reg_num : 1490
+cgpa : 9.56
+
+# Boolean values
+---
+check_1: Yes
+check_2: Y
+check_3: y
+check_4: true
+not_check_1 : No
+# Also N,n,false,False,FALSE
+not_check_2 : false
+not_check_3 : N
+not_check_4 : n
+
+# They are represented by yes or no
+...
+
+# We can also specify a type
+
+
+---
+nullptr : !!int 0
+positiveNumber : !!int 10
+NegativeNumber : !!int -10
+BinaryNumber : !!int 0b1000
+OctalNumber : !!int 06712
+HexadecimalNumber : !!int 0x18ABC
+Numwithcomma : !!int +1_00_00_000
+# 1,00,00,000
+
+infinity : !!int .inf
+floatNum : !!float 99.99
+not_a_number : .nan
+string_type : !!str Hello world
+bool_type : !!bool true
+nothing : !!null Null
+# This can be NULL, ~ , null
+
+# There can be a null key as well
+
+~ : this is a null key
+birthDate: !!timestamp 2003-07-10
+time : 20:10:10
+indian_time: 2003-07-10T10:00:00 +5:30
+exponential_num : 6.023E10
+avagadro_num : 6.023E23
+sequence : !!seq [1,2,3,4,5]
+sparse_seq:
+  - 1
+  - 2
+  - null
+  - 
+  # We can leave empty space as well which will be replaced as null
+  - whatsup ?
+
+...
+
+---
+
+# Nested sequences
+
+
+-
+  - Hello
+  - World
+  - Whatsup ?
+
+- 
+  - Talk
+  - To
+  - You
+  - Later
+
+
+college_name : VIT University
+information : !!map {location : "Chennai",area: 193 acres}
+pair example: !!pairs
+  - greet1 : hello
+  - greet2 : whatsup ?
+
+# this will be stored in this way in json format
+# {
+# "pair example":[
+#   ["greet1","hello"],
+#   ["greet2","whatsup"]
+# ]
+# }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
